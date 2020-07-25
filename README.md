@@ -1,2 +1,2 @@
 # ECCubeTicket
-ECCUBEを使った電子チケット販売システム
+ECCUBEを使ったＱＲコードチケット販売システム

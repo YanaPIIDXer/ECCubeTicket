@@ -1,0 +1,12 @@
+{
+  "name": "ECCubeTicketPlugin",
+  "version": "1.0.0",
+  "description": "ＱＲコードチケット販売用プラグイン",
+  "type": "eccube-plugin",
+  "require": {
+    "ec-cube/plugin-installer": "~0.0.7"
+  },
+  "extra": {
+    "code": "ECCubeTicketPlugin"
+  }
+}
