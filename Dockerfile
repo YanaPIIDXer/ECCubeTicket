@@ -89,8 +89,6 @@ RUN if [ ! -f ${APACHE_DOCUMENT_ROOT}/var/eccube.db ] && [ ! ${SKIP_INSTALL_SCRI
         composer run-script installer-scripts && composer run-script auto-scripts \
         ; fi
 
-# プラグインのインストール
-COPY ./ECCubeTicketPlugin ${APACHE_DOCUMENT_ROOT}/app/Plugin/ECCubeTicketPlugin
 # FIXME:本来はここでインストールを行いたいが、
 #       ECCube本体を先にインストール（bin/console eccube:install）する必要がある。
 #       そいつが上手く行かない為、一旦封印。
