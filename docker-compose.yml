@@ -32,7 +32,6 @@ services:
       - 4430:443
     volumes:
       - "./ec-cube:/var/www/html:cached"
-      - "./ECCubeTicketPlugin:/var/www/html/app/Plugin/ECCubeTicketPlugin"
       ### 同期対象からコストの重いフォルダを除外 #####################
       - "var:/var/www/html/var"
       - "vendor:/var/www/html/vendor"

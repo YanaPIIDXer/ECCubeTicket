@@ -1,1 +1,6 @@
 ec-cube/*
+!ec-cube/app/
+ec-cube/app/*
+!ec-cube/app/Plugin/
+ec-cube/app/Plugin/*
+!ec-cube/app/Plugin/ECCubeTicketPlugin/
