@@ -5,6 +5,8 @@
     use Doctrine\DBAL\Schema\Schema;
     use Doctrine\Migrations\AbstractMigration;
 
+    const TABLE_NAME = "dtb_ticket";
+
     /**
      * Auto-generated Migration: Please modify to your needs!
      */
@@ -13,11 +15,20 @@
         public function up(Schema $schema) : void
         {
             // this up() migration is auto-generated, please modify it to your needs
+            $table = $schema->createTable(TABLE_NAME);
+            $table->addColumn("id", "integer", array("unsigned" => true));
+            $table->setPrimaryKey(array("id"));
+
+            if($schema->getTable(TABLE_NAME) == null)
+            {
+                die("Create Table Failed.");
+            }
         }
 
         public function down(Schema $schema) : void
         {
             // this down() migration is auto-generated, please modify it to your needs
+            $schema->dropTable(TABLE_NAME);
         }
     }
 ?>
