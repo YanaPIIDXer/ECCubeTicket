@@ -14,6 +14,8 @@
     {
         public function up(Schema $schema) : void
         {
+            if($schema->getTable(TABLE_NAME)) { return; }
+            
             // this up() migration is auto-generated, please modify it to your needs
             $table = $schema->createTable(TABLE_NAME);
             $table->addColumn("id", "integer", array("unsigned" => true));
